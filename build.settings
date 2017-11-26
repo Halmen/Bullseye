@@ -1,0 +1,111 @@
+settings =
+{
+    plugins = {
+        
+        ["CoronaProvider.native.popup.social"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+        ["plugin.google.iap.v3"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { android=true }
+        },
+        ["CoronaProvider.gameNetwork.google"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { android = true },
+        },
+        
+        ["plugin.google.play.services"] =
+        {
+            publisherId = "com.coronalabs",
+            supportedPlatforms = { iphone=true, android=true }
+        },
+        
+        
+        
+        
+  --[[remove this line to implement tapfortap
+    ["plugin.tapfortap"] =
+    {
+            -- required
+       publisherId = "com.tapfortap",
+    },
+        ]] --remove this line to implement tapfortap
+        --    ["plugin.chartboost"] =
+        --        {
+        --            publisherId = "com.swipeware",
+        --        },
+        
+  --[[ remove this line to implement AdBuddiz
+    ["plugin.adbuddiz"] =
+        {
+            -- required
+            publisherId = "com.adbuddiz",
+        },
+        ]]-- remove this line to implement AdBuddiz
+        
+  --[[remove this line to implement inMobi
+     ["CoronaProvider.ads.inmobi"] =
+        {
+            publisherId = "com.coronalabs",
+        },
+        ]]-- remove this line to implement inMobi
+        
+  --[[remove this line to implement inneractive
+     ["CoronaProvider.ads.inneractive"] =
+        {
+            publisherId = "com.inner-active",
+        },
+        ]]--remove this line to implement inneractive
+        
+  --[[remove this line to implement Vungle
+     ["CoronaProvider.ads.vungle"] =
+        {
+            publisherId = "com.vungle",
+        },
+        ]]--remove this line to implement Vungle
+        
+  --[[remove this line to implement iAds
+    ["CoronaProvider.ads.iads"] =
+    {
+       -- required
+       publisherId = "com.coronalabs",
+    },
+        ]] --remove this line to implement iAds
+        
+ --[[remove this line to implement playhaven
+    ["plugin.playhaven"] =
+    {
+      -- required
+      publisherId = "com.playhaven",
+    },
+        ]] --remove this line to implement playhaven
+        
+        --    ["facebook"] =
+        --    {
+        --        -- required
+        --        publisherId = "com.coronalabs",
+        --    },
+        
+        
+    },
+    orientation =
+    {
+        default = "portrait",
+        supported = { "portrait" }
+    },
+    android =
+    {
+        googlePlayGamesAppId = "581588654369",  --insert your app id number for google game services
+        usesPermissions =
+        {
+            "com.android.vending.BILLING", --remove this line if you don't use iAP
+            "android.permission.INTERNET",
+            "android.permission.ACCESS_NETWORK_STATE",
+--            "android.permission.READ_PHONE_STATE" 
+            
+        },
+    }
+}
